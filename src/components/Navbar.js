@@ -1,26 +1,13 @@
 import { Link } from "gatsby";
 import React from "react";
+import { FiAlignJustify } from "react-icons/fi";
 
 const Navbar = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">SimplyReciepe</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-        <li>
-          <Link to="/tags">Tags</Link>
-        </li>
-        <li>
-          <Link to="/reciepes">Reciepes</Link>
-        </li>
-      </ul>
+    <nav className="navbar">
+      <div className="nav-center">
+        <div className="nav-header"></div>
+      </div>
     </nav>
   );
 };
