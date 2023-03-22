@@ -1,12 +1,13 @@
 import { Link } from "gatsby";
 import React from "react";
+import Layout from "../components/Layout";
 
 const contact = () => {
   return (
-    <div>
+    <Layout>
       <h1>contact</h1>
       <Link to="/">Back</Link>
-    </div>
+    </Layout>
   );
 };
 
