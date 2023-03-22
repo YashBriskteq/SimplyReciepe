@@ -1,16 +1,11 @@
 import React from "react";
-import { Link } from "gatsby";
+import Layout from "../components/Layout";
 
 const index = () => {
   return (
-    <div>
-      <nav>
-        <Link to="/">SimplyReciepe</Link>
-        <Link to="/about">About</Link>
-      </nav>
-      <h1>Hello !!!</h1>
-      <Link to="/contact">Contact</Link>
-    </div>
+    <Layout>
+      <h1>Home</h1>
+    </Layout>
   );
 };
 
