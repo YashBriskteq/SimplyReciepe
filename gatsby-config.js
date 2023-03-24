@@ -17,13 +17,13 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-styled-components",
     {
-      resolve: "gatsby-plugin-styled-components",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: `images`,
+        path: `${__dirname}/src/assets/images`,
       },
-      __key: "images",
     },
   ],
 };
