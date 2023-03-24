@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 
 const query = graphql`
@@ -30,13 +30,10 @@ const Gallery = () => {
     <Wrapper>
       {nodes.map((image, index) => {
         const { name } = image;
+        const pathImage = getImage(image);
         return (
           <article key={index} className="item">
-            <GatsbyImage
-              image={image.childImageSharp.gatsbyImageData}
-              alt={name}
-              className="gallery-img"
-            />
+            <GatsbyImage image={pathImage} alt={name} className="gallery-img" />
 
             <p>{name}</p>
           </article>
