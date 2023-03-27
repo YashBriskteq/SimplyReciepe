@@ -1,7 +1,8 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { StaticImage } from "gatsby-plugin-image";
-import FetchData from "../example/fetchData";
+// import FetchData from "../example/fetchData";
+import AllReciepes from "../components/AllReciepes";
 
 const index = () => {
   return (
@@ -22,7 +23,8 @@ const index = () => {
             </div>
           </div>
         </header>
-        <FetchData />
+        {/* <FetchData /> */}
+        <AllReciepes />
       </main>
     </Layout>
   );

@@ -1,11 +1,12 @@
 import React from "react";
+import AllReciepes from "../components/AllReciepes";
 import Layout from "../components/Layout";
 
 const reciepes = () => {
   return (
     <Layout>
       <div className="page">
-        <h1>reciepes</h1>
+        <AllReciepes />
       </div>
     </Layout>
   );
